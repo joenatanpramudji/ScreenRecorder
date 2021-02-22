@@ -187,7 +187,8 @@ namespace ScreenRecorder
             CombineVideoAndAudio(videoName, audioName);
 
             DeletePath(tempPath);
-            DeleteFilesExcept(outputPath, outputPath + "\\" + finalName); //Delete all files except the combined audio and video file
+            //Remove this function if the audio is not recording
+            //DeleteFilesExcept(outputPath, outputPath + "\\" + finalName); //Delete all files except the combined audio and video file
 
         }
     }
